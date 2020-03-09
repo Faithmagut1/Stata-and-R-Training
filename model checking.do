@@ -57,3 +57,19 @@
 * You can use this second method to the the lrtest. The two almost always 
 * be in the same direction. They agree on which model fits best the data.
 
+*** Try with low birth weight
+
+
+use lowbwt, clear 
+
+
+logistic lbw age lwt race smoke ptl hyper urirr pvft 
+
+
+est A
+
+*subcommand estimates A is unrecognized*
+logistic lbw i.agecat lwt race smoke ptl hyper urirr pvft 
+
+est B
+
